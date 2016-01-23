@@ -11,8 +11,6 @@ stdenv.mkDerivation rec {
     sha256 = "214bf29933f47cf25e6faa569f710731728a07a19cae91ea64f826051f68a8cf";
   };
 
-  patches = [ ../setuptools-test-suite.patch ];
-
   buildInputs = [ python wrapPython ];
   doCheck = false;  # requires pytest
   installPhase = ''
